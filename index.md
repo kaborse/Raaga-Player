@@ -2,7 +2,7 @@
 <html>
 <body style="background-color:rgba(90,90,90,0.5);">
 
-<h1 style="font-size:50px;text-align:center;">Kunal's Home</h1>
+<h1 style="font-size:50px;text-align:center;">Raaga Player</h1>
 <hr>
 <pre style="font-size:30px"> 
 <a href="https://www.linkedin.com/in/kunal-borse-27970815b/" target="_blank"> LinkedIn</a>  <a href="https://mail.google.com/mail/?tab=rm&authuser=0&ogbl" target="_blank"> Gmail </a> <a href="https://www.youtube.com/" target="_blank"> YouTube </a> <a href="https://www.interviewbit.com/courses/programming/" target="_blank"> Interviewbit </a>
