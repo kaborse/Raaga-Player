@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <body style="background-color:rgba(90,90,90,0.5);">
 
