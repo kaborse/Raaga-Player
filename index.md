@@ -1,16 +1,49 @@
-
+<!DOCTYPE html>
 <html>
-<body style="background-color:rgba(90,90,90,0.5);">
-
-<h1 style="font-size:50px;text-align:center;">Raaga Player</h1>
-<hr>
-<pre style="font-size:30px"> 
-<a href="https://www.linkedin.com/in/kunal-borse-27970815b/" target="_blank"> LinkedIn</a>  <a href="https://mail.google.com/mail/?tab=rm&authuser=0&ogbl" target="_blank"> Gmail </a> <a href="https://www.youtube.com/" target="_blank"> YouTube </a> <a href="https://www.interviewbit.com/courses/programming/" target="_blank"> Interviewbit </a>
-<a href="https://www.kaggle.com/" target="_blank"> Kaggle </a> <a href="https://erp.iitkgp.ac.in/IIT_ERP3/?ssoToken=8F9EA1F69D078CEE2B22C71AF3F43F20.worker27A23BBF8BEEF54B075F6A5C1DCDA25AD.worker3ZC4L7V190DVO24AQ2622AKQG5TT3EYX7Y2FTS5QSLZRPUUJZUHPSSZR0X4C22XBI" target="_blank"> ERP </a> <a href="https://kgpmoodle.iitkgp.ac.in/moodle/login/index.php" target="_blank"> Moodle </a> <a href="https://www.onlinegdb.com/online_c_compiler" target="_blank"> Online_Compiler </a> 
-<a href="https://github.com/" target="_blank"> GitHub</a>
+<body id="color" style="background:rgba(250,250,250,0.7);">
+<pre>
+                                                     <button type="button" onclick="dark()">Dark Mode</button>                                                                                 <button type="button" onclick="light()">Light Mode</button>
 </pre>
-<hr>
+
+
+<script>
+function dark() {
+  document.body.style.background = 'rgba(90,90,90,0.5)';
+}
+
+function light() {
+  document.body.style.background = 'rgba(250,250,250,0.7)';
+}
+
+function ReturnURL(){
+  var d = new Date();
+  var h = d.getHours();
+  if(h>=5 && h <=11){
+     return "PLgQASt9NhwjSitOCaOz5NypT21Rbkhmyz";
+  }
+  if(h>=12 && h <=17){
+     return "PLgQASt9NhwjQ5b7HibCoGTkpSV5Xb5chX";
+  }
+  if(h>=18 && h <=21){
+     return "PLgQASt9NhwjT5P_FWzG5PdT8PbryZoQen";
+  }
+  if(h==22 || h==23 || (h>=0 && h <=4)){
+     return "PLgQASt9NhwjQGh6cQ8bkXjjSOB8T-EYj2";
+  }
+}
+
+</script>
+
+<h1 style="font-size:50px;text-align:center;">Welcome to Raaga player!</h1>
+
+<h2 style="font-size:30px;text-align:center;">Play Raagas according to the time of the day</h2>
+
 <p style="text-align:center;">
+<iframe id="playlist" scrolling="yes" height="450" width =800" src=""></iframe>
+
+<script>
+    document.getElementById("playlist").src = "https://youtube.com/embed/videoseries?list="+ReturnURL();
+</script>
 <br>
 </p>
 <hr>
