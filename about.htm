@@ -2,9 +2,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body id="color" style="background:rgba(250,250,250,0.7);">
 <style>
+header {
+  position: sticky;
+  top: 0;
+  background-color: #111;
+  padding-left: 200px;
+  padding: 20px;
+  text-align: center;
+  font-family: "Inter",sans-serif;
+  font-size: 60px;
+  color: #818181;
+}
+footer {
+  background-color: #111;
+  padding: 10px;
+  padding-left: 200px;
+  text-align: left;
+  color: #818181;
+}
 h1 {
   font-family: "Inter",sans-serif;
-  font-size: 50px;
+  font-size: 30px;
 }
 h2 {
   font-family: "Inter",sans-serif;
@@ -12,7 +30,7 @@ h2 {
 }
 p {
   font-family: "Inter",sans-serif;
-  font-size: 30px;
+  font-size: 25px;
 }
 .sidenav {
   height: 100%;
@@ -29,25 +47,28 @@ p {
 .sidenav button {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 25px;
+  background: transparent;
+  font-family: "Inter",sans-serif;
+  font-size: 30px;
   color: #818181;
-  display: block;
+  border: none;
 }
 
 .sidenav button:hover {
-  color: #000000;
+  color: #ffffff;
 }
 
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
+  font-family: "Inter",sans-serif;
   font-size: 30px;
   color: #818181;
   display: block;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #ffffff;
 }
 
 .main {
@@ -56,7 +77,6 @@ p {
 }
 
 </style>
-
 <script>
 var b = 0;
 
@@ -76,10 +96,14 @@ function dark() {
 </script>
 
 <div class="sidenav">
-    <button type="button" style="background:'rgba(90,90,90,0.5)';" onclick="dark()">Dark Mode</button>
-    <a href="index.htm">Home</a>
-    <a href="about.htm">About</a>
+    <button type="button" onclick="dark()">Dark Mode</button>
+    <a href="index.htm" >Home</a>
+    <a href="about.htm" >About</a>
 </div>
+
+<header>
+  RAAGA  PLAYER
+</header>
 
 <div class="main">
 <h1> About </h1>
@@ -88,5 +112,10 @@ function dark() {
   
 </p>
 </div>
+		
+<footer>
+  <p>Developed by kaborse - <a href="mailto: kaborse@gmail.com.com">E-mail</a>     <a href="http://www.linkedin.com/in/kunal-borse-27970815b" target="_blank">LinkedIn</a>    <a href="https://github.com/kaborse" target="_blank">Github</a> </p>
+</footer>
+
 </body>
 </html>
